@@ -1,0 +1,259 @@
+.main {
+  background-color: rgb(233, 243, 255);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+}
+
+.leftside {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+  min-width: 300px;
+}
+
+.image1 {
+  width: 100%;
+  max-width: 500px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.rightside {
+  flex: 1;
+  width: 100%;
+  max-width: 700px;
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.belowtext2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.belowtext3,
+.belowtext4,
+.belowtext5,
+.belowtext6 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  color: #555;
+  line-height: 1.5;
+}
+
+.belowtext3 svg,
+.belowtext4 svg,
+.belowtext5 svg,
+.belowtext6 svg {
+  margin-right: 0.5rem;
+  margin-top: 0.1rem;
+  color: #2ecc71;
+  flex-shrink: 0;
+}
+
+.buttonpos2 {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.signInButton2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #264F9E;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  gap: 8px;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.signInButton2:hover {
+  background-color: #0068df;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(38, 79, 158, 0.3);
+}
+
+.buttonicon {
+  margin-left: 0.5rem;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .main {
+    gap: 2rem;
+    padding: 1.5rem 1rem;
+  }
+  
+  .leftside {
+    margin-left: 40px;
+  }
+  
+  .rightside {
+    margin-right: 40px;
+    margin-top: 30px;
+  }
+  
+  .heading {
+    font-size: 2.2rem;
+  }
+  
+  .belowtext2,
+  .belowtext3,
+  .belowtext4,
+  .belowtext5,
+  .belowtext6 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 770px) {
+  .main {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+  
+  .leftside {
+    margin-left: 0;
+    margin-top: 40px;
+    order: 1;
+    width: 100%;
+  }
+  
+  .rightside {
+    margin-right: 0;
+    margin-top: -20px;
+    order: 2;
+    width: 100%;
+    max-width: none;
+    display: flexbox;
+        align-items: center;
+        justify-content: center;
+  }
+  
+  .image1 {
+    max-width: 350px;
+    max-height: 250px;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .belowtext2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .belowtext3,
+  .belowtext4,
+  .belowtext5,
+  .belowtext6 {
+    font-size: 1rem;
+    align-items: flex-start;
+    margin-left: 100px;
+  }
+  
+  .buttonpos2 {
+    justify-content: center;
+    padding-right: 0;
+    margin-top: 5rem;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  .main {
+    padding: 0.5rem;
+  }
+  
+  .heading {
+    font-size: 1.8rem;
+  }
+  
+  .belowtext2 {
+    font-size: 1rem;
+  }
+  
+  .belowtext3,
+  .belowtext4,
+  .belowtext5,
+  .belowtext6 {
+    font-size: 0.95rem;
+    margin-left: 20px;
+  }
+  
+  .image1 {
+    max-width: 280px;
+    max-height: 200px;
+  }
+  
+  .signInButton2 {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .buttonpos2{
+    margin-top: 2rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 320px) {
+  .heading {
+    font-size: 1.6rem;
+  }
+  
+  .belowtext2,
+  .belowtext3,
+  .belowtext4,
+  .belowtext5,
+  .belowtext6 {
+    font-size: 0.9rem;
+    margin-left: 20px;
+  }
+  
+  .image1 {
+    max-width: 250px;
+    max-height: 180px;
+  }
+  
+  .signInButton2 {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
